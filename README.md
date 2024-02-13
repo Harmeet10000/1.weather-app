@@ -2,6 +2,9 @@
 
 Welcome to the React Weather App! This is a simple and user-friendly weather application built with React. It provides current weather information, hourly and daily forecasts, allows you to choose the metric system, set your location easily, and even changes the background color dynamically based on the weather conditions.
 
+![Screenshot from 2024-01-17 14-22-58](https://github.com/Harmeet10000/1.weather-app/assets/98949780/3edc4e8e-0627-468b-ad3e-23263f7f996c)
+
+
 
 ## Table of Contents
 - [Features](#features)
