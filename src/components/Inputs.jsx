@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { UilSearch, UilLocationPoint } from "@iconscout/react-unicons";
 import { toast } from "react-toastify";
 
-function Inputs({ setQuery, units, setUnits }) {
+const Inputs = ({ setQuery, units, setUnits }) => {
   const [city, setCity] = useState("");
 
   const handleUnitsChange = (e) => {
@@ -12,6 +12,7 @@ function Inputs({ setQuery, units, setUnits }) {
 
   const handleSearchClick = () => {
     if (city !== "") setQuery({ q: city });
+    console.log("city", city,  );
   };
 
   const handleLocationClick = () => {
@@ -21,6 +22,7 @@ function Inputs({ setQuery, units, setUnits }) {
         toast.success("Location fetched!");
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
+        // console.log("lat", lat, "lon", lon);
 
         setQuery({
           lat,
